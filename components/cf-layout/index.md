@@ -567,7 +567,9 @@ Main content...
 
 ## cf-grid helpers
 
+
 ## Featured content module
+
 <div class="block">
     <section class="block block__border block__flush featured-content-module">
         <div class="featured-content-module_text">
@@ -585,4 +587,4 @@ Main content...
 
 ## Heroes
 
-[See the dedicated test page for heroes](heroes.html)
+[See the full-width hero demo page](heroes.html)

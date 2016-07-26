@@ -1065,24 +1065,27 @@ The visual should be 640x360 (16x9 ratio) and resize to fit the height of the FC
 <p>A hero consists of a headline, a small amount of additional text,
 an optional call to action, and an illustration.
 Its background color is flush with the sides of the screen, and the content is centered with wrapper classes.</p>
-<p>The illustration can be customized by setting the <code>background-image</code> property on the <code>.hero_image</code> element.</p>
+<p>The illustration can be customized by setting the <code>background-image</code> property on the <code>.m-hero_image</code> element.</p>
 <p>On small screens (or where media queries are not supported),
-the text spans the full width of the <code>.hero_wrapper</code> and the illustration is displayed underneath.</p>
+the text spans the full width of the <code>.m-hero_wrapper</code> and the illustration is displayed underneath.</p>
 <p>For larger screen sizes, media queries are used to position the illustration to the right of the text.</p>
-<p>On desktop, the hero should not exceed 285px in height.
+<p>At the grid's maximum width and above, the hero should not exceed 285px in height.
 The image should be 195px in height to conform to this standard.</p>
 <section class="m-hero">
     <div class="m-hero_wrapper wrapper">
         <div class="m-hero_text">
             <h1 class="m-hero_heading">Hero title</h1>
             <p class="m-hero_subhead">
-                Hero text goes here
+                Hero text goes here. This paragraph has a recommended maximum length of 185 characters.
+                This paragraph has a recommended maximum length of 185 characters.
             </p>
-            <p class="m-hero_cta">
-                <a>Call to action</a>
-            </p>
+            <a class="m-hero_cta" href="#">
+                Call to action
+            </a>
         </div>
-        <div class="m-hero_image" style="background-image: url('http://placekitten.com/g/400/195')"></div>
+        <div class="m-hero_image-wrapper">
+            <div class="m-hero_image" style="background-image: url('http://www.consumerfinance.gov/static/fin-ed-resources/static/img/parents_hero_760x390.png')"></div>
+        </div>
     </div>
 </section>
 <pre><code><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>section</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-hero<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
@@ -1090,13 +1093,16 @@ The image should be 195px in height to conform to this standard.</p>
         <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-hero_text<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
             <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>h1</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-hero_heading<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>Hero title<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>h1</span><span class="token punctuation" >&gt;</span></span>
             <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>p</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-hero_subhead<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
-                Hero text goes here
+                Hero text goes here. This paragraph has a recommended maximum length of 185 characters.
+                This paragraph has a recommended maximum length of 185 characters.
             <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>p</span><span class="token punctuation" >&gt;</span></span>
-            <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>p</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-hero_cta<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
-                <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>a</span><span class="token punctuation" >&gt;</span></span>Call to action<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>a</span><span class="token punctuation" >&gt;</span></span>
-            <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>p</span><span class="token punctuation" >&gt;</span></span>
+            <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>a</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-hero_cta<span class="token punctuation" >"</span></span> <span class="token attr-name" >href</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>#<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
+                Call to action
+            <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>a</span><span class="token punctuation" >&gt;</span></span>
         <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >&gt;</span></span>
-        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-hero_image<span class="token punctuation" >"</span></span><span class="token style-attr language-css" ><span class="token attr-name" > <span class="token attr-name" >style</span></span><span class="token punctuation" >="</span><span class="token attr-value" ><span class="token property" >background-image</span><span class="token punctuation" >:</span> <span class="token url" >url('http://placekitten.com/g/400/195')</span></span><span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >&gt;</span></span>
+        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-hero_image-wrapper<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
+            <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-hero_image<span class="token punctuation" >"</span></span><span class="token style-attr language-css" ><span class="token attr-name" > <span class="token attr-name" >style</span></span><span class="token punctuation" >="</span><span class="token attr-value" ><span class="token property" >background-image</span><span class="token punctuation" >:</span> <span class="token url" >url('http://www.consumerfinance.gov/static/fin-ed-resources/static/img/parents_hero_760x390.png')</span></span><span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >&gt;</span></span>
+        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >&gt;</span></span>
     <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >&gt;</span></span>
 <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>section</span><span class="token punctuation" >&gt;</span></span>
 </code></pre>
